@@ -1,28 +1,50 @@
+'use client';
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const navItem = [
+  { label: 'Home', href: "/" },
+  // { label: 'About', href: "/about" },
+  // { label: 'Blog', href: "/blog" },
+];
 
 export default function page() {
   return (
-    <div className="flex min-h-screen items-center justify-center">
-      <div className="max-w-[60vw] font-mono text-amber-50 px-8 py-6">
-        <div>
-          <span>hey, i'm rishav raj</span> <br /> <br />
-          i enjoy designing, coding, and generally poking at problems until they make sense. <br /><br />
-          most of my time goes into solving problems for real people, not just shipping features. <br /> <br />
-          i’m happiest in fast-moving environments where the roadmap shifts and feedback is immediate. <br /><br />
-          early-stage is my zone: defining structure, testing assumptions, and iterating until the product actually clicks. <br /><br />
-        </div>
+    <div className="text-blue-50 font-mono">
+      <header className="min-w-3xl flex justify-start p-[20_0] text-blue-50">
+        <nav className="flex flex-row gap-5">
+          {navItem.map((item) => (
+            <Link key={item.label} href={item.href}>{item.label}</Link>
+          ))}
+        </nav>
+      </header>
+      <div className="background absolute flex justify-center items-center overflow-hidden max-h-58 max-w-3xl rounded-2xl border-zinc-900 border">
+        <img src="/bg.png" alt="" />
+      </div>
 
-        <div>
-          <a className="text-blue-900" target="_blank" href="https://github.com/rishavvrajj">github</a> {' '}
-          {' '} | {' '}
-          <a className="text-blue-900" target="_blank" href="https://www.linkedin.com/in/rishavv-rajj/">linkedin</a>
-          {' '} | {' '} 
-          <a className="text-blue-900" target="_blank" href="https://x.com/rishavvrajj">x</a> <br /> <br />
+      <div className="profile flex gap-3 items-center relative pt-44">
+        <div className="flex w-32 h-32 rounded-3xl overflow-hidden border-zinc-800 border-2">
+          <img src="/profile.jpg" alt="" />
         </div>
-              
-        <div>
-          yeah, that's it.
+        <div className="flex flex-col gap-2"> 
+          <span className="text-3xl flex items-center gap-2">rishav raj <img className="w-7 h-7" src="/trick.png" alt="" /></span>
+          <span className="text-sm opacity-50 tracking-tighter">Full-Stack and AI Developer</span>
+          <span className="text-xs opacity-55 flex items-center gap-1"><img className="h-5 w-4" src="/view.png" alt="" /><b>91 </b>profile View</span>
         </div>
       </div>
+
+      <div className="bio p-[20px_0px] tracking-tighter">
+        
+        <span className="text-md opacity-80">Polymath and learner learning human things.</span><br />
+        <span className="text-sm opacity-40">I use business analysis, product design, and engineering to build simple, personal tools.</span><br />
+        <span className="text-sm opacity-40">Staying warm with coffee, chess, music, and sketching.</span><br />
+      </div>
+      
+      <div>
+
+      </div>
+
     </div>
-  )
-}
+  );
+};
