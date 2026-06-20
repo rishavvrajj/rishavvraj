@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,6 +16,16 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "rishav raj",
   description: "I design and code until problems make sense. From voice AI platforms to full-stack apps, I solve real problems for people—not just ship features. Early-stage founder thriving in fast-moving environments where the roadmap shifts and feedback is immediate.",
+  icons: { icon: '/favicon.png' },
+  openGraph: {
+    images: ['/thumbnail.png'],
+    title: 'rishav raj',
+    description: "I design and code until problems make sense. From voice AI platforms to full-stack apps, I solve real problems for people—not just ship features. Early-stage founder thriving in fast-moving environments where the roadmap shifts and feedback is immediate.",
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/thumbnail.png'],
+  },
   keywords: [
     "Rishav Raj",
     "startup founder",
