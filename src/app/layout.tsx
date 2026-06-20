@@ -15,12 +15,12 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "rishav raj",
-  description: "I design and code until problems make sense. From voice AI platforms to full-stack apps, I solve real problems for people—not just ship features. Early-stage founder thriving in fast-moving environments where the roadmap shifts and feedback is immediate.",
+  description: "I use business analysis, product design, and engineering to build simple, personal tools.",
   icons: { icon: '/favicon.png' },
   openGraph: {
     images: ['/thumbnail.png'],
     title: 'rishav raj',
-    description: "I design and code until problems make sense. From voice AI platforms to full-stack apps, I solve real problems for people—not just ship features. Early-stage founder thriving in fast-moving environments where the roadmap shifts and feedback is immediate.",
+    description: "I use business analysis, product design, and engineering to build simple, personal tools.",
   },
   twitter: {
     card: 'summary_large_image',
