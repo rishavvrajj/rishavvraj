@@ -25,8 +25,9 @@ export default function Fotter() {
         </div>
       </div>
 
-      <div className="text-[10px] md:text-xs lg:text-sm opacity-50 p-[20px_0px] border-t-2 border-zinc-700">
-        @ 2026 rishav raj
+      <div className="flex justify-between text-[10px] md:text-xs lg:text-sm opacity-50 p-[20px_0px] border-t-2 border-zinc-700">
+        <span>@ 2026 rishav raj</span>
+        <span>Poison, Fear, Silence.</span>
       </div>
     </div>
   )
