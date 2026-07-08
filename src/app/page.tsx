@@ -3,6 +3,7 @@
 import Nav from "@/components/nav";
 import Profile from "@/components/profile";
 import Bio from "@/components/bio";
+import Card from "@/components/card";
 import Github from "@/components/github";
 import Fotter from "@/components/fotter";
 
@@ -13,6 +14,7 @@ export default function page() {
       <Profile />
       <Bio />
       <Github />
+      <Card />
       <Fotter />
     </section>
   );
