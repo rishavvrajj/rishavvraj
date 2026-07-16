@@ -12,7 +12,7 @@ const navlink =[
 export default function Fotter() {
   return (
     <div className="text-blue-50">
-      <div className="flex flex-col justify-center min-h-20 border-t-2 border-zinc-700">
+      <div className="flex flex-col justify-center min-h-20 border-t-2 border-b-2 border-zinc-700">
         <div className="flex justify-between items-center text-[10px] md:text-xs lg:text-sm ">
           <div className="opacity-50"><span>rishav raj</span><br />Still learning, still building, still growing.</div>
           <div className="flex gap-5">
@@ -25,7 +25,7 @@ export default function Fotter() {
         </div>
       </div>
 
-      <div className="flex justify-between text-[10px] md:text-xs lg:text-sm opacity-50 p-[20px_0px] border-t-2 border-zinc-700">
+      <div className="flex justify-between text-[10px] md:text-xs lg:text-sm opacity-50 p-[20px_0px]">
         <span>@ 2026 rishav raj</span>
         <span>Poison, Fear, Silence.</span>
       </div>

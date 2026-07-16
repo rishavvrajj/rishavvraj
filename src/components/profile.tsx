@@ -17,7 +17,7 @@ export default function Profile() {
       </div>
       <div className=" text-blue-50">
         <div className="-mt-22 flex gap-3 items-center">
-          <div className="flex justify-center items-center max-w-25 max-h-25 sm:max-w-32 sm:max-h-32 rounded-2xl overflow-hidden border-zinc-800 border-2">
+          <div className="flex justify-center items-center max-w-25 max-h-25 sm:max-w-32 sm:max-h-32 rounded-2xl overflow-hidden border-zinc-900 border-2">
             <img src="/profile.jpg" alt="profile img" />
           </div>
           <div className="flex flex-col gap-0.5 sm:gap-1 md:gap-2 ">
